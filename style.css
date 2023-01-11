@@ -690,6 +690,15 @@ footer .line {
   transform: translate(0);
 }
 @media screen and (max-width: 1020px) {
+  .column-img {
+    display: none;
+  }
+  img {
+    width: 80%;
+  }
+  .main .grid {
+    grid-template-columns: 1fr;
+  }
   h2 {
     font-size: 20px;
   }
@@ -711,7 +720,7 @@ footer .line {
     left: 0;
     margin: 0 auto;
     z-index: 2000;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--darkBlue);
     display: flex;
     flex-direction: column;
